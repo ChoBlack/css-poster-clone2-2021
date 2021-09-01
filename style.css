@@ -11,16 +11,16 @@ body {
 
 .father {
   display: grid;
-  grid-template-columns: repeat(4, 200px);
-  grid-template-rows: 100px repeat(2, 300px);
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: 100px repeat(2, 370px);
   grid-template-areas:
-    "child1 child1 child1"
-    "child2 child2 child3"
-    "child4 child4 child4";
+    "header header header"
+    "bad bad bad-next"
+    "religion religion religion";
   gap: 15px;
 }
 
-.child1 {
+.header {
   display: flex;
   font-size: 15px;
   color: white;
@@ -28,24 +28,45 @@ body {
   padding: 20px 20px;
   background-color: black;
   justify-content: space-between;
-  grid-area: child1;
+  grid-area: header;
 }
 
 #padding-left {
   padding-left: 50px;
 }
 
-.child2 {
-  background-color: green;
-  grid-area: child2;
+.bad {
+  padding-left: 7px;
+  display: flex;
+  font-size: 170px;
+  align-items: flex-end;
+  font-weight: 700;
+  margin-bottom: 0%;
+  background-color: #ff4500;
+  grid-area: bad;
 }
-.child3 {
-  background-color: blue;
-  grid-area: child3;
+.bad-next {
+  background-color: #ff4500;
+  grid-area: bad-next;
 }
 
-.child4 {
-  background-color: deeppink;
-  grid-area: child4;
+.religion {
+  background-color: #ff4500;
+  grid-area: religion;
   margin-bottom: 15px;
+}
+
+#religion {
+  padding-left: 7px;
+  font-size: 170px;
+  align-self: flex-end;
+  font-weight: 700;
+  justify-content: space-around;
+}
+
+#jawbreaker {
+  /* padding: 20px; */
+  font-size: 30px;
+  font-weight: 500;
+  color: #dde1d4;
 }
